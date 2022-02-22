@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Festive&display=swap');
+*{
+    margin: 0;padding: 0;border: none;
+    outline: none;box-sizing: border-box;
+    text-transform: capitalize;
+    transition: all .2s linear;
+    font-family: 'poppins',sans-serif;
+    text-decoration: none;
+}
+:root{
+    --box-shadow:0.5rem 1rem rgba(0,0,0,0.1);
+    --border:.2rem solid rgba(0,0,0,.1);
+}
+html{
+    font-size: 62.5%;
+    /* overflow-x:hidden ; */
+    scroll-behavior: smooth;
+    scroll-padding-top: 7rem;
+    
+}
+body{
+    background:#eee;
+    
+}
+header{
+    padding: 2rem 9% ;
+    background-color: #fc8403;
+    color: #fff;
+    z-index: 900;
+    position: fixed;
+    top: 0;left: 0;right: 0;
+    box-shadow: 5px 4px 3px #f2f2f2;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.blackout{
+    position:fixed;
+    min-height: 100vh;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background:rgba(47, 49, 54,0.5);
+}
+.blackout .cart{
+    height: 300px;
+    width: 300px;
+    background: #fff;
+    color: #000;
+    z-index: 1100;
+}
+.blackout .cart img{
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+}
+
+/* header */
+header .logo{
+    font-size: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+header span, span{
+    color: #130f40;
+    font-weight: bolder;
+}
+
+
+header .fa-shopping-cart,i{
+    transform: scale(225%);
+    
+}
+header .logo img, header .beli img{
+    width: 4rem;
+    height: 4rem;
+    transform: translateY(-10%);
+}
+header .navbar a{
+    font-size: 1.7rem;
+    margin: 0 1rem;
+    color: #000;
+}
+header .navbar a:hover{
+    color: #fff;
+}
+header .beli{
+    position: absolute;
+    top: 5rem;
+    right: -20rem;
+    padding-top: 10rem;
+    background: #fff;
+    transform: translate(40%,-5%);
+    height: 300px;
+    width: 300px;
+    border: var(--border);
+    z-index: 1100;
+    opacity:0;
+    color: #000;
+}
+header .beli form input{
+    border: var(--border);
+}
+select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+header .active{
+    opacity: 1;
+    position: absolute;
+    top: 11rem;
+    right: 20rem;
+    padding-top: 4rem;
+    background: rgb(255, 255, 255);
+    overflow: hidden;
+    height: 500px;
+    width: 300px;
+    border: var(--border);
+    z-index: 10000;
+}
+
+
+header button,header input{
+    padding: 10px 100px;
+}
+header button:hover{
+    color: #008000;
+    transform: translate(2%,5%);
+    box-shadow:var(--box-shadow);
+}
+
+header .beli .logo{
+    font-size: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    color: #000;
+}
+header .beli form i{
+    padding: 1.5rem;
+    font-size: 2rem;
+}
+.judul{
+    padding-top: 11rem;
+    font-size: 4rem;
+    position: relative;
+}
+/* menu */
+.layout-menu{
+    text-align: center;
+    color: #000;
+    margin-left:10%;
+    width: 60%;
+    min-height: 100vh;
+    background:#fff;
+    position: relative;
+    padding-top: 12rem;
+    border: var(--border);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2.5rem;
+    transform: translateX(20%);
+}
+
+.layout-menu .card{
+    height: 300px;
+    width: 300px;
+    background-color: #eee;
+    border: var(--border);
+    box-shadow: var(--box-shadow);
+    margin-left: 5px;
+    transform: translateY(-30%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.layout-menu .card img{
+    height: 300px;
+    width: 300px;
+    background-size: cover;
+}
+.layout-menu .card:hover{
+    background: rgb(133, 130, 130);
+    
+}
+.layout-menu .card img:hover{
+    transform: scale(94%);
+    transition: all 0.5s linear;
+}
+.layout-menu .card .caption{
+    position: absolute;
+    z-index: 1000;
+    font-size: 3rem;
+    color: #fff;
+}
+/* footer */
+footer{
+    text-align: center;
+    padding-bottom: 14rem;
+}

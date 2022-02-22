@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resto Padang</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="https://pngimage.net/wp-content/uploads/2018/06/logo-rumah-gadang-png-2.png" alt="">
+            <span>Family</span> Sakato
+        </div>
+
+        <input type="text" placeholder="selamat mencari">
+
+        <!-- backend handle php menampilkan menu berdasarkan klik -->
+
+        <nav class="navbar">
+            <a href="#">Serba Ayam</a>
+            <a href="#">Gulai</a>
+            <a href="#">Sop</a>
+            <a href="#">Serba Ikan</a>
+            <a href="#">Paket Hemat</a>  
+        </nav>
+
+        <div id="shopping-cart" class="fas fa-shopping-cart"></div>
+
+        <!-- layout memesan makanan -->
+        <div class="beli">
+            <div class="logo">
+                <img src="https://pngimage.net/wp-content/uploads/2018/06/logo-rumah-gadang-png-2.png" alt="">
+                <span> Family </span>Sakato
+            </div>
+
+            <h1>Pesan Disini</h1>
+
+            <!-- backend handle php memilih makanan -->
+
+            <form action="#">
+                <label for="option-menu">Available</label>
+                <select id="option-menu" name="menu">
+                    <option value="Ayam">Ayam</option>
+                    <option value="Ikan">Ikan</option>
+                    <option value="Kikil">Kikil</option>
+                </select>
+                <a href="#"><i class="fa-solid fa-circle-plus"
+                    class="tambah-btn"></i>Tambah</a>
+                
+                <i class="fa-solid fa-square-xmark"></i>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+
+
+
+    </header>
+
+    <section class="judul"><h1>Menu Masakan Hari Ini</h1></section>
+
+    <!-- menu utama -->
+    <section class="layout-menu">
+        
+        <!-- backend handle php menampilkan menu dari querydatabase -->
+
+        <div class="card">
+            
+            <div class="caption"><h3>Ayam Sayur</h3></div>
+            <img src="https://www.masakapahariini.com/wp-content/uploads/2020/05/resep-gulai-padang-lezat-1024x683.jpg" alt="ayam sayur">
+        </div>
+
+        <div class="card">
+            <img src="https://i.pinimg.com/originals/d1/48/f4/d148f476a74c6e69e16215bd52647f67.jpg" alt="kikil">
+            <div class="caption"><h3>Kikil</h3></div>
+        </div>
+
+        <div class="card">
+            <img src="https://th.bing.com/th/id/R.146e0e243c411de68d3360afd824ed39?rik=VMtM3QD%2b4cDJtQ&riu=http%3a%2f%2f1.bp.blogspot.com%2f-2LEkPwgqLzk%2fUsuzOo54YDI%2fAAAAAAAAJKQ%2flYBZiE_YdNU%2fs1600%2fresep%2blele%2bgoreng%2bungkep1.JPG&ehk=oQsLpVMUxN94EYehykiHOLT6h38hAKJbZZIjDX6GZbw%3d&risl=&pid=ImgRaw&r=0" alt="lele">
+            <div class="caption"><h3>Lele</h3></div>
+        </div>
+
+        <div class="card">
+            <img src="https://assets.cookin.id/crop/0x0:0x0/x/photo/2018/11/23/3451216698.jpg" alt="bakar">
+            <div class="caption"><h3>Ayam Bakar</h3></div>
+        </div>
+
+        <div class="card">
+            <img src="https://th.bing.com/th/id/R.e085c71c4eb9d8c0e096693b1bd60840?rik=cgksqAVjA5Phrg&riu=http%3a%2f%2fsaribundo.biz%2fwp-content%2fuploads%2f2014%2f08%2fikan-tongkol.jpg&ehk=FD%2bWKjato5PJLR9FkT4iiaFtQGRdzWcmf5vkMRKdbzc%3d&risl=&pid=ImgRaw&r=0" alt="tongkol">
+            <div class="caption"><h3>Tongkol</h3></div>
+        </div>
+        <div class="card">
+            <img src="https://th.bing.com/th/id/OIP.PKFpHCOiDfl1JU2RsfweIAHaHP?pid=ImgDet&rs=1" alt="ayam goreng">
+            <div class="caption"><h3>Ayam Goreng</h3></div>
+        </div>
+        
+
+    </section>
+
+    <section class="blackout">
+        <div class="cart"><h1>Promo beli 1 gratis 1 dengan
+            menjadi member family sakato
+            <img src="https://th.bing.com/th/id/R.35ebc02bcba79b66ca918023bd4319b4?rik=zqU5ETa9tAL5yg&riu=http%3a%2f%2fwww.hashtagbylily.com%2fwp-content%2fuploads%2f2017%2f10%2fsongket-Padang.jpg&ehk=3ktpCVsHhV%2fEvRMJ7s%2bUXSiifYKZsr8XH9sY%2byB6zL8%3d&risl=&pid=ImgRaw&r=0" alt="">
+        </h1></div>
+        <button id="btn-close">Close</button>
+    </section>
+
+        
+        
+    
+<!-- footer -->
+<footer>
+    <h4>Flex Corp 2022 copyright all reserved</h4>
+</footer>
+</body>
+<script src="script.js"></script>
+</html>
